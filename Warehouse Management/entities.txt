@@ -1,0 +1,4 @@
+LG34,LG Speaker,27,B.14.8  
+CR23,Corsair RAM,50,A.17.6  
+NZ41,NZXT Cabinet,15,C.19.10  
+RA55,Razer Headset,22,B.21.9  
