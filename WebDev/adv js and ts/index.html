@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A news website with advanced JavaScript and TypeScript features.">
+    <title>News Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>News Portal</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#latest">Latest</a></li>
+                    <li><a href="#popular">Popular</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Multimedia Content Section -->
+    <section id="multimedia" class="multimedia">
+        <div class="container">
+            <h2>Multimedia Content</h2>
+            <div id="multimediaContent" class="multimedia-grid">
+                <!-- Multimedia items will be dynamically populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- User Comments Section -->
+    <section id="comments" class="comments">
+        <div class="container">
+            <h2>User Comments</h2>
+            <form id="commentForm">
+                <textarea id="commentInput" placeholder="Add a comment..." required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="commentsList">
+                <!-- Comments will be dynamically populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 News Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js" type="module"></script>
+</body>
+</html>

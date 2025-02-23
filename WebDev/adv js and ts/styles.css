@@ -1,0 +1,59 @@
+/* Multimedia Section */
+.multimedia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.multimedia-item img, .multimedia-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Comments Section */
+.comments {
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+}
+
+#commentForm {
+    margin-bottom: 2rem;
+}
+
+#commentForm textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+#commentForm button {
+    padding: 0.75rem 1.5rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#commentForm button:hover {
+    background-color: #2980b9;
+}
+
+.comment-item {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.comment-item p {
+    margin: 0;
+}
+
+.comment-item small {
+    color: #777;
+}

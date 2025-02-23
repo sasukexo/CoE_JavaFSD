@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A user-friendly news website with interactive features.">
+    <title>News Portal</title>
+    <link rel="stylesheet" href="b.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>News Portal</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#latest">Latest</a></li>
+                    <li><a href="#popular">Popular</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <section class="search-bar">
+        <div class="container">
+            <input type="text" id="searchInput" placeholder="Search articles by keyword, tag, or author...">
+            <button id="searchButton">Search</button>
+        </div>
+    </section>
+
+    <!-- Featured News Slider -->
+    <section id="home" class="featured-slider">
+        <div class="container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="https://via.placeholder.com/800x400" alt="Featured News 1">
+                    <div class="slide-content">
+                        <h2>Breaking News: Major Event Happens</h2>
+                        <p>Read more about this breaking news story.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <!-- Add more slides here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section id="latest" class="latest-news">
+        <div class="container">
+            <h2>Latest News</h2>
+            <div class="news-grid" id="latestNewsGrid">
+                <!-- News items will be dynamically populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Tabs -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2>Categories</h2>
+            <div class="tabs">
+                <button class="tab-button active" data-category="all">All</button>
+                <button class="tab-button" data-category="technology">Technology</button>
+                <button class="tab-button" data-category="business">Business</button>
+                <button class="tab-button" data-category="health">Health</button>
+            </div>
+            <div class="news-grid" id="categoryNewsGrid">
+                <!-- News items will be dynamically populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 News Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="search,js.js"></script>
+</body>
+</html>

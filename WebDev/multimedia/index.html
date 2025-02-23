@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A news website with integrated multimedia content.">
+    <title>News Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>News Portal</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#latest">Latest</a></li>
+                    <li><a href="#popular">Popular</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section id="article" class="article">
+        <div class="container">
+            <h2>Breaking News: Major Event Happens</h2>
+            <p>This is a breaking news article with embedded multimedia content.</p>
+
+            <!-- Embedded Video -->
+            <div class="multimedia-item">
+                <h3>Video Report</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Podcast Embed -->
+            <div class="multimedia-item">
+                <h3>Podcast</h3>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <!-- Photo Gallery -->
+            <div class="multimedia-item">
+                <h3>Photo Gallery</h3>
+                <div class="gallery">
+                    <img src="car.webp" alt="Photo 1">
+                    <img src="car.webp" alt="Photo 2">
+                    <img src="car.webp" alt="Photo 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 News Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
