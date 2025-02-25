@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Magazine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">E-Magazine</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Multimedia</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search articles...">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Featured News Slider -->
+        <section class="featured-news">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="https://imgs.search.brave.com/2RXcbnRD-vwaG904nnaeWQEE_BJn2YguUxDMxTV0a5I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zcy1p/LnRoZ2ltLmNvbS9w/dWJsaWMvaW5jb21p/bmcva3ZuYnYzL2Fy/dGljbGU2OTI1NTY0/My5lY2UvYWx0ZXJu/YXRlcy9MQU5EU0NB/UEVfMTIwMC9pbWFn/ZSUyMDQuanBn" alt="Featured News 1">
+                    <div class="slide-content">
+                        <h2>IND VS PAK</h2>
+                        <p>INdia won their recent match  against pak</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://via.placeholder.com/1200x400" alt="Featured News 2">
+                    <div class="slide-content">
+                        <h2>Featured News Title 2</h2>
+                        <p>Featured news description...</p>
+                    </div>
+                </div>
+                <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <!-- Latest News -->
+        <section class="latest-news">
+            <h2>Latest News</h2>
+            <div class="articles">
+                <article>
+                    <img src="https://imgs.search.brave.com/fD5OtY7dLcJfhuBkwDwfVHCCJuefmDG1vx1CEKqBn2Y/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jLm5k/dHZpbWcuY29tLzIw/MjUtMDEvZzEyajdp/YW9fbWFoaW5kcmEt/ZXZzXzYyNXgzMDBf/MDhfSmFudWFyeV8y/NS5qcGc_aW09Rml0/QW5kRmlsbCxhbGdv/cml0aG09ZG5uLHdp/ZHRoPTc3MyxoZWln/aHQ9NDM1" alt="Latest News 1">
+                    <h3>Latest News Title 1</h3>
+                    <p>Latest news description...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+                <article>
+                    <img src="https://imgs.search.brave.com/fD5OtY7dLcJfhuBkwDwfVHCCJuefmDG1vx1CEKqBn2Y/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jLm5k/dHZpbWcuY29tLzIw/MjUtMDEvZzEyajdp/YW9fbWFoaW5kcmEt/ZXZzXzYyNXgzMDBf/MDhfSmFudWFyeV8y/NS5qcGc_aW09Rml0/QW5kRmlsbCxhbGdv/cml0aG09ZG5uLHdp/ZHRoPTc3MyxoZWln/aHQ9NDM1" alt="Latest News 2">
+                    <h3>Latest News Title 2</h3>
+                    <p>Latest news description...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+                <article>
+                    <img src="https://imgs.search.brave.com/fD5OtY7dLcJfhuBkwDwfVHCCJuefmDG1vx1CEKqBn2Y/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jLm5k/dHZpbWcuY29tLzIw/MjUtMDEvZzEyajdp/YW9fbWFoaW5kcmEt/ZXZzXzYyNXgzMDBf/MDhfSmFudWFyeV8y/NS5qcGc_aW09Rml0/QW5kRmlsbCxhbGdv/cml0aG09ZG5uLHdp/ZHRoPTc3MyxoZWln/aHQ9NDM1" alt="Latest News 3">
+                    <h3>Latest News Title 3</h3>
+                    <p>India won their recent match against Pakisthan</p>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Category News -->
+        <section class="category-news">
+            <h2>Category News</h2>
+            <div class="tabs">
+                <button class="tab-button active" data-category="politics">Politics</button>
+                <button class="tab-button" data-category="sports">Sports</button>
+                <button class="tab-button" data-category="tech">Tech</button>
+            </div>
+            <div class="articles" id="category-articles">
+                <!-- Articles loaded dynamically -->
+            </div>
+        </section>
+
+        <!-- Multimedia Section -->
+        <section class="multimedia">
+            <h2>Multimedia</h2>
+            <div class="gallery">
+                <div class="media">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="media">
+                    <audio controls>
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="media">
+                    <img src="5495.jpg" alt="Gallery Image">
+                    <img src="5495.jpg" alt="Gallery Image">
+                    <img src="5495.jpg" alt="Gallery Image">
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Comment Section -->
+        <section class="comments">
+            <h2>Comments</h2>
+            <form id="comment-form">
+                <textarea id="comment-input" placeholder="Add a comment..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="comment-section">
+                <!-- Comments loaded dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2025 E-Magazine. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
