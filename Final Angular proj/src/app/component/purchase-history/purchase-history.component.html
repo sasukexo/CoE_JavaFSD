@@ -1,0 +1,23 @@
+<div class="container">
+    <h3 class="text-center">Purchase History</h3>
+  
+    <div *ngIf="purchasedMovies.length === 0" class="text-center">
+      <p>No purchase history available.</p>
+    </div>
+  
+    <div *ngIf="purchasedMovies.length > 0" class="row">
+      <div *ngFor="let movie of purchasedMovies" class="col-md-4">
+        <div class="card mb-3">
+          <img *ngIf="movie.image" [src]="movie.image" class="card-img-top" alt="{{ movie.name || 'Movie' }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ movie.name || 'Unknown Movie' }}</h5>
+            <p class="card-text"><strong>Genre:</strong> {{ movie.genre || 'N/A' }}</p>
+            <p class="card-text"><strong>Director:</strong> {{ movie.director || 'N/A' }}</p>
+            <p class="card-text"><strong>IMDB:</strong> {{ movie.imdb || 'N/A' }}</p>
+            <p class="card-text"><strong>Price:</strong> ₹{{ movie.price || '0' }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

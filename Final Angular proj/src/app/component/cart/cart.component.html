@@ -1,0 +1,17 @@
+<h2>Your Cart</h2>
+
+<ul *ngIf="cartItems.length > 0; else emptyCart">
+  <li *ngFor="let item of cartItems">
+    <img [src]="item.image" alt="{{ item.name }}" width="50">
+    <strong>{{ item.name }}</strong> ({{ item.genre }}) - Directed by {{ item.director }} | IMDB: {{ item.imdb }}
+    <span>Price: ${{ item.price }}</span>
+    <button (click)="removeFromCart(item.id)">Remove</button>
+  </li>
+</ul>
+
+<ng-template #emptyCart>
+  <p>Your cart is empty.</p>
+</ng-template>
+
+<h3 *ngIf="cartItems.length > 0">Total Price: ${{ totalPrice }}</h3>
+<button *ngIf="cartItems.length > 0" (click)="purchaseMovies()">Purchase</button>

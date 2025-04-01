@@ -1,0 +1,33 @@
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* Adjust spacing */
+}
+
+.movie-card {
+  width: 200px; /* Adjust based on design */
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff4500;
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e03e00;
+}
