@@ -1,0 +1,10 @@
+<h2>Your Purchases</h2>
+<ul>
+  <li *ngFor="let item of purchases">
+    <img [src]="item.image" alt="{{ item.name }}" width="50">
+    <strong>{{ item.name }}</strong> ({{ item.genre }}) - Directed by {{ item.director }} | IMDB: {{ item.imdb }}
+    <span>Price: ${{ item.price }}</span>
+  </li>
+</ul>
+
+<h3>Total Spent: ${{ totalSpent }}</h3>

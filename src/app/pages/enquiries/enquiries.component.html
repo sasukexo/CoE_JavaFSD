@@ -1,0 +1,17 @@
+
+<h3>Reviews</h3>
+<div class="alert alert-dark" role="alert">
+    Select Genre:
+    <select [(ngModel)]="selected">
+       <option *ngFor="let service of serviceTypes" [value]="service">
+        {{ service }}</option>
+    </select>
+</div>
+<div *ngFor="let enquiry of enquirylist | filterservice:selected" class="media mb-3">
+   <div class="media-body">
+        <h5 class="mt-0">{{ enquiry.name | uppercase }}</h5>
+        <p><strong>Email:</strong> {{ enquiry.email  }}</p>
+        <p><strong>Service Type:</strong> {{ enquiry.serviceType }}</p>
+        <p>{{ enquiry.message | highlight}}</p>
+    </div>
+</div>

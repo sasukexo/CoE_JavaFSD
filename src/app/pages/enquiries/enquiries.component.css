@@ -1,0 +1,76 @@
+/* Reviews Section */
+h3 {
+    text-align: center;
+    color: #ffcc00;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(255, 204, 0, 0.7);
+}
+
+/* Alert Box (Genre Selector) */
+.alert-dark {
+    background: #1c1c1c;
+    color: white;
+    border: 1px solid #ffcc00;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Dropdown Styling */
+.alert-dark select {
+    background: #333;
+    color: white;
+    border: 1px solid #ffcc00;
+    padding: 8px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.alert-dark select:focus {
+    background: #444;
+    border-color: #ffcc00;
+    box-shadow: 0 0 8px rgba(255, 204, 0, 0.7);
+}
+
+/* Review Card */
+.media {
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #ffcc00;
+    box-shadow: 0px 4px 8px rgba(255, 204, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.media:hover {
+    transform: translateY(-3px);
+}
+
+/* Review Content */
+.media-body h5 {
+    color: #ffcc00;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.media-body p {
+    color: white;
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+/* Highlighted Text (for the message) */
+p strong {
+    color: #ffcc00;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .alert-dark {
+        font-size: 14px;
+    }
+    .media {
+        padding: 10px;
+    }
+}

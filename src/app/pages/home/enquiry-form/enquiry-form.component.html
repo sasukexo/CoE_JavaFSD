@@ -1,0 +1,33 @@
+<div class="container">
+    <h3>Movie Review</h3>
+    <form (submit)="submitForm()">
+      <div class="mb-3">
+        <label for="name" class="form-label">Movie Name</label>
+        <input type="text" id="name" class="form-control" [(ngModel)]="name" name="name" required />
+      </div>
+ 
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="text" id="email" class="form-control" [(ngModel)]="email" name="email" required />
+      </div>
+ 
+      <div class="mb-3">
+        <label for="serviceType" class="form-label">Genre</label>
+        <select id="serviceType" class="form-select" [(ngModel)]="serviceType" name="serviceType" required>
+          <option value="" disabled selected>Select a Genre</option>
+          <option *ngFor="let service of serviceTypes" [value]="service">{{ service }}</option>
+        </select>
+      </div>
+ 
+      <div class="mb-3">
+        <label for="message" class="form-label">Review</label>
+        <textarea id="message" class="form-control" rows="4" [(ngModel)]="message" name="message" required></textarea>
+      </div>
+ <div class="alert alert-danger" *ngIf="this.errors.length>=1">
+    <ul>
+        <li *ngFor="let error of errors">{{error}}</li>
+    </ul>
+</div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>

@@ -1,0 +1,79 @@
+/* Center the form */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.3);
+    color: white;
+}
+
+/* Form Heading */
+h3.text-center {
+    color: #ffcc00;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgba(255, 204, 0, 0.7);
+}
+
+/* Labels */
+.form-label {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Input Fields */
+.form-control, .form-select {
+    background: #333;
+    color: white;
+    border: 1px solid #ffcc00;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Focus Effects */
+.form-control:focus, .form-select:focus {
+    background: #444;
+    border-color: #ffcc00;
+    box-shadow: 0 0 8px rgba(255, 204, 0, 0.7);
+}
+
+/* Submit Button */
+.btn-primary {
+    background: #ffcc00;
+    border: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: #1c1c1c;
+}
+
+.btn-primary:hover {
+    background: #e6b800;
+    transform: translateY(-2px);
+}
+
+/* File Input Styling */
+input[type="file"] {
+    background: #222;
+    border: none;
+    padding: 10px;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}

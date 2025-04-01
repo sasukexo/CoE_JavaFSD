@@ -1,0 +1,22 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4 mb-4" *ngFor="let project of projects">
+            <div class="card shadow-sm p-2">
+                <img src="http://localhost:8090/{{project.image}}"  class="card-img-top" alt="{{ project.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ project.name }}</h5>
+                    <p class="card-text">{{ project.description }}</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Status:</strong> {{ project.status }}</li>
+                        <li class="list-group-item"><strong>Start Date:</strong> {{ project.startDate }}</li>
+                        <li class="list-group-item"><strong>End Date:</strong> {{ project.endDate }}</li>
+                        <li class="list-group-item"><strong>Team Size:</strong> {{ project.teamSize }}</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btn btn-primary">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

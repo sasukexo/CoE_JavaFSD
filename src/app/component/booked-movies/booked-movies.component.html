@@ -1,0 +1,15 @@
+<div class="container">
+  <h3 class="text-center">Booked Movies</h3>
+  <div class="row">
+    <div *ngFor="let movie of bookedMovies" class="col-md-4 col-sm-6 col-12 mb-4">
+      <div class="movie-card">
+        <img [src]="movie.image" alt="{{ movie.name }}" class="movie-img">
+        <h3>{{ movie.name }}</h3>
+        <p><strong>🎬 Genre:</strong> {{ movie.genre }}</p>
+        <p><strong>🎥 Director:</strong> {{ movie.director }}</p>
+        <p><strong>⭐ IMDB Rating:</strong> {{ movie.imdb }}</p>
+        <p><strong>💰 Price:</strong> ₹{{ movie.price }}</p>
+      </div>
+    </div>
+  </div>
+</div>
